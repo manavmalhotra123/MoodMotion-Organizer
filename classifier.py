@@ -4,7 +4,7 @@ from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
-classifier = load_model("emotion_classifier/model.h5")
+classifier = load_model("model.h5")
 
 def classify_emotion(frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

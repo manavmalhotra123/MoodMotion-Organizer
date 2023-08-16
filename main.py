@@ -3,7 +3,7 @@ from video_processor import process_video
 from classifier import emotion_labels
 
 def main():
-    video_folder = "input_videos"  # Replace with the folder containing video files
+    video_folder = "test"  # Replace with the folder containing video files
     output_folder = "output_videos"  # Replace with the desired output folder
 
     if not os.path.exists(output_folder):
